@@ -1,0 +1,27 @@
+{
+  "name": "tictacnode",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe in Node",
+  "scripts": {
+    "test": "mocha --require babel-core/register --require test.js --recursive './src/**/*.test.js'",
+    "cli": "node -r babel-core/register src/cli.js"
+  },
+  "author": "clyde.espeno@gmail.com",
+  "dependencies": {
+    "ramda": "0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "chai": "4.1.2",
+    "chai-match-pattern": "1.1.0",
+    "dirty-chai": "2.0.1",
+    "eslint": "4.19.1",
+    "mocha": "5.2.0",
+    "sinon": "6.0.0",
+    "sinon-chai": "3.2.0"
+  }
+}

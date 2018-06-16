@@ -1,0 +1,98 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended"
+  ],
+  "settings": {},
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-lines": [
+      "error",
+      {
+        "max": 270
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "indent": "off",
+    "sort-imports": "off",
+    "no-case-declarations": "off",
+    "no-useless-escape": "off",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1,
+        "maxBOF": 1
+      }
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "after",
+          ":": "after"
+        }
+      }
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "newline-before-return": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "padded-blocks": [
+      "error",
+      {
+        "switches": "never",
+        "classes": "always"
+      }
+    ],
+    "prefer-const": 1,
+    "curly": "error",
+    "comma-dangle": ["error", "never"],
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "eqeqeq": ["error", "always"],
+    "no-param-reassign": "error"
+  },
+  "globals": {
+    "fetch": true,
+    "Promise": true,
+    "Proxy": true,
+    "setTimeout": true,
+    "__dirname": true,
+    "process": true,
+    "global": true,
+    "arguments": true,
+    "expect": true,
+    "sinon": true,
+    "spy": true,
+    "stub": true,
+    "mock": true,
+    "before": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "after": true,
+    "describe": true,
+    "it": true
+  }
+}
