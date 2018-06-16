@@ -2,9 +2,11 @@
   "name": "tictacnode",
   "version": "1.0.0",
   "description": "Tic Tac Toe in Node",
+  "main": "dist/cli",
   "scripts": {
-    "test": "mocha --require babel-core/register --require test.js --recursive './src/**/*.test.js'",
-    "cli": "node -r babel-core/register src/cli.js"
+    "build": "babel ./src --ignore *.test.js --out-dir ./dist",
+    "cli": "node -r babel-core/register src/cli.js",
+    "test": "mocha --require babel-core/register --require test.js --recursive './src/**/*.test.js'"
   },
   "author": "clyde.espeno@gmail.com",
   "dependencies": {
